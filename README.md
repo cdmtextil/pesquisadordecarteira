@@ -7,6 +7,7 @@ Site estático (GitHub Pages) para consultar a carteira de pedidos: busca direta
 - `index.html` — a página inteira (HTML, CSS e JavaScript em um arquivo).
 - `carteira.enc.json` — a carteira **criptografada** (AES-256-GCM; chave derivada da senha de entrada por PBKDF2-SHA256). Sem a senha, o conteúdo não pode ser lido.
 - `tools/atualizar_carteira.py` — converte a planilha `carteira_….xlsx` e regrava `carteira.enc.json`.
+- `representantes/` — versão para outros representantes: sem senha e sem carteira embutida; cada um carrega o próprio arquivo, que é lido só no navegador dele. Fica em `/representantes/` no endereço do site.
 
 ## Atualizar a carteira
 
